@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="navigation">
+            <nav>
+                <h1 class="logo">Mahima.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>    
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h4>Hello!</h4>
+                <h1>I'm Mahima <br> Waghmare</h1>
+                <p>Web Developer</p> 
+                <a href="/images/RESUME_MAHIMA.pdf" download class="btn btn2">See My Resume</a>
+            </div>
+        </div> 
+    </div> 
+
+    <!----------------- about ------------------->
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row"> 
+                <div class="about-col1">
+                    <img src="/images/background.jpg">
+                </div>
+                <div class="about-col2">
+                    <p>I am Mahima Waghmare. Currently I am pursuing B.tech 
+                        in Information Technology from Lakshmi Narain College 
+                        of Technology.
+                        <br><br>
+                        I have a deep interest in Web-Development and I make 4 projects in Web-Development.
+                        I'm skilled in JavaScript and have a good knowledge of Java.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span> <br> Java </li>
+                            <li><span>Frontend</span> <br> HTML | CSS | JavaScript</li>
+                            <li><span>Backend</span> <br> NodeJS | ExpressJS</li>
+                            <li><span>Frameworks</span> <br> Bootstrap | ReactJS</li>
+                            <li><span>Database</span> <br> MongoDB | SQL</li>
+                        </ul> 
+                    </div>  
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-2025</span> <br> B.Tech from LNCT - 8.01 CGPA </li>
+                            <li><span>2021</span> <br> Class 12th - 91.8% </li>
+                            <li><span>2019</span> <br> Class 10th - 90%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- projects  ------------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            
+            <div class="projects-list">
+                <div>
+                    <i class="fa-regular fa-compass"></i>
+                    <h2>Wanderlust</h2>
+                    <p>Developed a Full Stack Website called “Wanderlust”, a global
+                        accommodations booking website.
+                        <br><br>
+                        Integrated user authentication login/signup page, property
+                        listing, allowing users to easily upload and showcase images of
+                        their properties, browse edit, booking systems.
+                    </p>
+                    <a href="projects.html">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck-medical"></i>
+                    <h2>Gurukripa Multispeciality Hospital  Website</h2>
+                    <p>Designed and implemented a comprehensive website for
+                        Gurukripa Multispeciality Hospital in Betul, Madhya Pradesh,
+                        featuring appointment scheduling, information about hospital
+                        services, and user authentication.
+                        </p>
+                    <a href="projects.html">learn more</a>
+                </div> 
+                <div>
+                    <i class="fas fa-circle icon red"></i>
+                    <i class="fas fa-circle icon blue"></i>
+                    <i class="fas fa-circle icon green"></i>
+                    <i class="fas fa-circle icon yellow"></i>
+                    <h2>Simon Says Game</h2>
+                    <p>Developed a Frontend project called Simon Says Game.
+                        The game challenges players to remember and repeat
+                        increasingly complex sequences of colors.
+                        <br><br>
+                        This project demonstrate my skills in front-end development
+                        and my ability to create engaging user experiences through
+                        web technologies.
+                        </p>
+                    <a href="projects.html">learn more</a>
+                </div>
+            </div>
+            <a href="projects.html" class="btn">See more projects</a>
+        </div>
+    </div>
+
+
+    <!---------------------- Skills ---------------------->
+
+    <div id="skill">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+
+            <div class="skills-list">
+                <div class="skill">
+                    <img src="/images/skill-1.png">
+                    <div class="layer">
+                        <h3>Java</h3>
+                        <p>Java is a high-level, class-based, object-oriented programming 
+                           language used to create software programs and applications. 
+                           It is a very powerful language that is used to build all kinds of 
+                           software, from small programs that run on your computer to large.
+                        </p>
+                        <a href="skills.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="skill"> 
+                    <img src="/images/skill-2.webp">
+                    <div class="layer">
+                        <h3>JavaScipt</h3>
+                        <p>JavaScript is the Programming Language for the Web.
+                            JavaScript can update and change both HTML and CSS.
+                            JavaScript can calculate, manipulate and validate data.</p>
+                        <a href="skills.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="/images/skill-3.webp">
+                    <div class="layer">
+                        <h3>MongoDB</h3>
+                        <p>MongoDB is a document database with the scalability and 
+                            flexibility that you want with the querying and indexing
+                            that you need.
+                        </p>
+                        <a href="skills.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="/images/nodejs.png">
+                    <div class="layer">
+                        <h3>NodeJS</h3>
+                        <p>
+                            Node.js® is a free, open-source, cross-platform 
+                            JavaScript runtime environment that lets developers 
+                            create servers, web apps, command line tools and scripts.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+            <a href="skills.html" class="btn">See more</a>
+
+        </div>
+    </div>
+
+
+    <!---------------------------- contact ------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-regular fa-envelope"></i> mahimawaghmare16@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8120537454</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mahima-waghmare"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MahimaWaghmare"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/Mahima_Waghmare/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></a>
+                        <a href="https://www.hackerrank.com/profile/mahimawaghmare16"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.naukri.com/code360/profile/mahimawaghmare"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M23.198 0c-.499.264-1.209.675-1.79.984a543 543 0 0 0 0 6.242c.995-.526 1.761-.834 1.79-2.066zM8.743.181C7.298.144 5.613.65 4.47 1.414c-1.17.8-1.987 1.869-2.572 3.179A16.8 16.8 0 0 0 .9 8.87c-.15 1.483-.128 3.079.025 4.677c.27 1.855.601 3.724 1.616 5.456c1.57 2.62 4.313 4.109 7.262 4.19c3.41.246 7.233.53 11.411.807c.022-2.005.01-5.418 0-6.25c-3.206-.21-7.398-.524-11.047-.782c-.443-.043-.896-.056-1.324-.172c-1.086-.295-1.806-.802-2.374-1.757c-.643-1.107-.875-2.832-.797-4.294c.11-1.27.287-2.41 1.244-3.44c.669-.56 1.307-.758 2.161-.84c5.17.345 7.609.53 12.137.858c.032-1.133.01-3.46 0-6.229C16.561.752 12.776.474 8.743.181m-.281 9.7c.174.675.338 1.305.729 1.903c.537.832 1.375 1.127 2.388.877c.76-.196 1.581-.645 2.35-1.282zm12.974 1.04l-5.447.689c.799.739 1.552 1.368 2.548 1.703c.988.319 1.78.01 2.308-.777c.209-.329.56-1.148.591-1.614zm.842 6.461c-.388.01-.665.198-.87.355c.002 1.798 0 4.127 0 6.223c.586-.297 1.135-.644 1.793-.998c-.005-1.454.002-3.137-.005-4.707a.904.904 0 0 0-.917-.873z"/></svg></a>
+                        <a href="https://www.facebook.com/profile.php?id=61551894286524&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mahima.22_?igsh=b2EzMGlxcno0eGs="><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <a href="/images/RESUME_MAHIMA.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>   
+                    <!-- <span id="msg">hello</span>   -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
